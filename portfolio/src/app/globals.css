@@ -5,3 +5,9 @@ body{
   background-color: black;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
+.pin-spacer {
+  height: auto;
+  width: auto;
+
+}

@@ -2,20 +2,21 @@
 .projects{
   position: relative;
   color: white;
-  margin-top: 25vh;
+  margin-top: 20vh;
   padding: 10%;
 }
 
 .projectDescription{
   display: flex;
-  height: 700px;
+  height: 600px;
   justify-content: space-between;
   gap: 5%;
+
 }
 
 .imageContainer{
   position: relative;
-  height: 100%;
+  height: 90%;
   width: 100%;
 }
 
@@ -26,13 +27,16 @@
 
 .column{
   display: flex;
-  width: 40%;
+  width: 100%;
   font-size: 1.8vw;
 }
 
 .column:last-of-type{
+  padding-top: 30%;
+  height: 100%;
   align-items: flex-end;
   font-size: 1.8vw;
+  z-index: 1;
 }
 
 .projectList{
