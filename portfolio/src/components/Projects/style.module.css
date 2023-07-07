@@ -1,52 +1,56 @@
-
-.projects{
+.projects {
   position: relative;
   color: white;
   margin-top: 20vh;
   padding: 10%;
 }
 
-.projectDescription{
+.projectDescription {
   display: flex;
   height: 600px;
   justify-content: space-between;
   gap: 5%;
-
 }
 
-.imageContainer{
+.imageContainer {
   position: relative;
-  height: 90%;
-  width: 100%;
+  height: 60%;
+  width: 50%;
 }
 
-.imageContainer img{
+.imageContainer img {
   object-fit: cover;
   border-radius: 10px;
 }
 
-.column{
+.column {
   display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   font-size: 1.8vw;
 }
 
-.column:last-of-type{
-  padding-top: 30%;
+.column {
+  display: flex;
   height: 100%;
-  align-items: flex-end;
-  font-size: 1.8vw;
-  z-index: 1;
+  width: 40%;
+  font-size: 1.6vw;
 }
 
-.projectList{
+.column:last-of-type {
+  align-items: flex-end;
+  font-size: 1.8vw;
+}
+
+.projectList {
   display: flex;
   flex-direction: column;
   position: relative;
   margin-top: 200px;
 }
 
-.projectEl{
+.projectEl {
   width: 100%;
   color: white;
   text-transform: uppercase;
@@ -55,7 +59,7 @@
   display: flex;
   justify-content: flex-end;
 }
-.projectEl h2{
+.projectEl h2 {
   margin: 0px;
   margin-top: 40px;
   margin-bottom: 20px;
