@@ -1,0 +1,21 @@
+.footer{
+  position: relative;
+  color: white;
+  z-index: 100;
+  font-size: 3vw;
+  text-transform: uppercase;
+  margin-top: 30vw;
+  margin-left: 10vw;
+  margin-bottom: 15vw;
+}
+.footer p{
+  margin: 0px;
+  position: relative;
+} 
+
+.footer a {
+  color: white;
+  text-decoration: none;
+  border-bottom: 1px solid white;
+  transition: 0.3s;
+}
