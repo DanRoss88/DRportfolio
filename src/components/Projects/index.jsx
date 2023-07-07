@@ -44,8 +44,7 @@ export default function Index() {
   useLayoutEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
     
-    const stoppingPoint = document.body.offsetHeight - window.innerHeight ; // 50% of the viewport height
-    
+    const stoppingPoint = document.body.offsetHeight - window.innerHeight ; 
     ScrollTrigger.create({
       trigger: imageContainer.current,
       pin: true,
