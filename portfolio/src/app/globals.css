@@ -9,5 +9,5 @@ body{
 .pin-spacer {
   height: auto;
   width: auto;
-
+  position: relative;
 }

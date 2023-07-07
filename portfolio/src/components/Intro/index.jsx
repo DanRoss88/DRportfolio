@@ -31,7 +31,7 @@ export default function Index() {
     <div ref={homeHeader} className={styles.homeHeader}>
       <div className={styles.backgroundImage} ref={background}>
         <Image
-          src={"/images/background.jpg"}
+          src={"/images/Solid-Colors-Wallpaper-Background.jpg"}
           fill={true}
           quality={100}
           alt="background image"
@@ -46,7 +46,7 @@ export default function Index() {
           className={styles.introImage}
         >
           <Image
-            src={"/images/dan.jpg"}
+            src={"/images/dan3.JPG"}
             alt="intro image"
             fill={true}
             priority={true}
@@ -55,6 +55,7 @@ export default function Index() {
         <h1 data-scroll data-scroll-speed="0.7">
           Dan Ross
         </h1>
+        
       </div>
     </div>
   );

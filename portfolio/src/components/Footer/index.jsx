@@ -26,16 +26,21 @@ const socials = [
 
 export default function Index() {
   return (
-    <div className={styles.footer}>
-      {socials.map((socials, index) => {
-        return (
-          <>
-            <AnimatedText key={index}>
-              <Link href={socials.link}>{socials.name}</Link>
-            </AnimatedText>
-          </>
-        );
-      })}
+    <div className={styles.footerContainer}>
+      <div className={styles.footer}>
+        {socials.map((socials, index) => {
+          return (
+            <>
+              <AnimatedText key={index}>
+                <Link href={socials.link}>{socials.name}</Link>
+              </AnimatedText>
+            </>
+          );
+        })}
+      </div>
+      <div className={styles.footerBottom}>
+        <p>&copy; {new Date().getFullYear()} Daniel Ross</p>
+      </div>
     </div>
   );
 }
@@ -52,7 +57,7 @@ function AnimatedText({ children }) {
         start: "0px bottom",
         end: "top+=400px bottom",
       },
-      opacity: 0,
+      opacity: 1,
       left: "400px",
       ease: "power3.Out",
     });

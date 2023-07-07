@@ -1,12 +1,19 @@
+.footerContainer{
+  padding-top: 5vh;
+  position: relative;
+}
+
+
 .footer{
   position: relative;
   color: white;
   z-index: 100;
   font-size: 3vw;
   text-transform: uppercase;
-  margin-top: 30vw;
   margin-left: 10vw;
-  margin-bottom: 15vw;
+  margin-bottom: 15vw; 
+  height: auto;
+  width: 80%;
 }
 .footer p{
   margin: 0px;
@@ -18,4 +25,23 @@
   text-decoration: none;
   border-bottom: 1px solid white;
   transition: 0.3s;
+}
+
+.footer a:hover {
+  color: white;
+  border-bottom: 1px solid #052331;
+}
+
+.footerBottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3vh;
+}
+
+.footerBottom p {
+  font-size: 1.5vw;
+  margin: 0px;
+  color : white;
 }

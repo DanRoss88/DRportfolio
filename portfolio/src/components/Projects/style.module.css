@@ -1,67 +1,91 @@
 .projects {
   position: relative;
   color: white;
-  margin-top: 20vh;
+  margin-top: 10vh;
   padding: 10%;
 }
 
 .projectDescription {
   display: flex;
-  height: 600px;
+  height: 500px;
   justify-content: space-between;
-  gap: 5%;
+  gap: 2%;
 }
 
 .imageContainer {
   position: relative;
-  height: 60%;
-  width: 50%;
+  height: auto;
+  width: 70%;
 }
 
 .imageContainer img {
-  object-fit: cover;
+  object-fit: contain;
   border-radius: 10px;
+  margin-bottom: 20vh;
 }
 
-.column {
+/* .column {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
   font-size: 1.8vw;
-}
+} */
 
 .column {
   display: flex;
   height: 100%;
   width: 40%;
-  font-size: 1.6vw;
+  /* font-size: 1.vw; */
+  z-index: 100;
 }
 
 .column:last-of-type {
   align-items: flex-end;
-  font-size: 1.8vw;
+  font-size: 1.6vw;
 }
 
 .projectList {
   display: flex;
   flex-direction: column;
   position: relative;
-  margin-top: 200px;
+  margin-top: 15vh;
 }
 
 .projectEl {
   width: 100%;
   color: white;
   text-transform: uppercase;
-  font-size: 3vw;
+  font-size: 2vw;
   border-bottom: 1px solid white;
   display: flex;
   justify-content: flex-end;
 }
-.projectEl h2 {
+.projectEl h2{
   margin: 0px;
   margin-top: 40px;
   margin-bottom: 20px;
   cursor: default;
 }
+
+.projectEl a{
+  color: white;
+  text-decoration: none;
+}
+
+.projectEl a:hover {
+  color: #ffffff;
+}
+
+@media screen and (max-width: 768px) {
+  
+  .column:last-of-type{
+    font-size: 2.3vw;
+    width: 25%;
+  }
+
+  .projectEl{
+    font-size: 2.8vw;
+  }
+}
+  

@@ -3,13 +3,23 @@
   position: relative;
   color: white;
   z-index: 100;
-  font-size: 2.5vw;
+  font-size: 2vw;
   text-transform: uppercase;
-  margin-top: 40vw;
+  margin-top: 15vw;
   margin-left: 10vw;
+  margin-right: 10vw;
 }
 .description p{
   margin: 0px;
   position: relative;
   
 } 
+
+@media screen and (max-width: 768px) {
+  .description{
+    font-size: 3vw;
+    margin-top: 35vh;
+  }
+
+}
+  

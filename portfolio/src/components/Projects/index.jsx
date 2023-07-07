@@ -22,17 +22,17 @@ const projects = [
   },
   {
     title: "Tweeter",
-    src: "Tweeter!.png",
+    src: "Tweeter.png",
     link: "https://github.com/DanRoss88/tweeter",
     description:
       "Tweeter is a simple, single-page Twitter clone. I took this project on to learn more about front-end development and to practice my HTML, CSS, JS, jQuery, and AJAX front-end skills. I customized the design to my liking and added a few features of my own.",
   },
   {
-    title: "Cover Letter",
-    src: "miniques_lagoon.jpg",
+    title: "TinyApp",
+    src: "tinyapp.png",
     link: "#",
     description:
-      "An interactive cover letter designed in NextJs to showcase my skills and experience. I wanted to create something that was more than just a PDF. I wanted to create something that would stand out and be memorable.",
+      "TinyApp was the first full-stack web application that I built. It allows users to shorten long URLs. It was built using Node.js and Express.",
   },
 ];
 
@@ -43,11 +43,14 @@ export default function Index() {
 
   useLayoutEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
+    
+    const stoppingPoint = document.body.offsetHeight - window.innerHeight ; // 50% of the viewport height
+    
     ScrollTrigger.create({
       trigger: imageContainer.current,
       pin: true,
-      start: "-=100px",
-      end: document.body.offsetHeight - window.innerHeight - 50,
+      start: "-=50px",
+      end: () => `bottom - ${stoppingPoint}px`,
     });
   }, []);
 
@@ -81,7 +84,7 @@ export default function Index() {
               }}
               className={styles.projectEl}
             >
-              <h2>{project.title}</h2>
+             <Link href={`${projects[selectedProject].link}`}> <h2>{project.title}</h2></Link>
             </div>
           );
         })}
