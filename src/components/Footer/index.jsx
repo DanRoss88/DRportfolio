@@ -20,7 +20,7 @@ const socials = [
   },
   {
     name: "Resume",
-    link: "/resume.pdf",
+    link: "https://flowcv.com/resume/9th3fq6rpv",
   },
 ];
 
