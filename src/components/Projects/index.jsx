@@ -7,6 +7,13 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 const projects = [
   {
+    title: "Fremen Web Solutions",
+    src: "fws.jpeg",
+    link: "fremenwebsolutions.com",
+    description:
+      "Fremen Web Solutions is an innovative web development company that specializes in building custom web applications. I built this website using Next.js and Tailwind CSS.",
+  },
+  {
     title: "First Aide",
     src: "speech-recognition.gif",
     link: "https://github.com/danross88/first-aide-client",
