@@ -19,6 +19,13 @@ const projects = [
     link: "https://github.com/danross88/first-aide-client",
     description:
       "First Aide is an AI-powered personal health assistant that utilizes speech recognition and Open AI to provide medical-related advice. It also keeps track of personal medical records. This was a collaborative effort for my final project at Lighthouse Labs.",
+  }, 
+  {
+    title: "NTR Plumbing",
+    src: "NTRplumbing.png",
+    link: "https://www.norththompsonplumbing.com/",
+    description:
+      "This is an example of a website with a contact form built from a template I created in Next.js, designed to allow a single configuration file to alter any landing page.",
   },
   {
     title: "Photolabs",
@@ -27,19 +34,13 @@ const projects = [
     description:
       "PhotoLabs is a full-stack web application that allows users to upload photos, categorize them into topics and store their favorites. It was built using React and Node.js. It was my first introduction to React.",
   },
+ 
   {
     title: "Tweeter",
     src: "Tweeter.png",
     link: "https://github.com/DanRoss88/tweeter",
     description:
       "Tweeter is a simple, single-page Twitter clone. I took this project on to learn more about front-end development and to practice my HTML, CSS, JS, jQuery, and AJAX front-end skills. I customized the design to my liking and added a few features of my own.",
-  },
-  {
-    title: "TinyApp",
-    src: "tinyapp.png",
-    link: "#",
-    description:
-      "TinyApp was the first full-stack web application that I built. It allows users to shorten long URLs. It was built using Node.js and Express.",
   },
 ];
 
